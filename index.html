@@ -18,8 +18,56 @@
 
         <script type="text/babel">
 
+        const sallyImageAddr = "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg";
+
+        function Resume(props) {
+            return(
+                <div>
+                <header>
+                    <img src={sallyImageAddr} alt="A picture of Sally Student"/>
+                    <h1>{props.name}</h1>
+                    <address>
+                        <div>Email: <a href="mailto:sallystudent@studentemail.org">sallystudent@studentemail.org</a></div>
+                        <div>Tel: <a href="tel:+19084266667">(908) 426-6667</a></div>
+                    </address>
+                </header>
+                <main>
+                <section>
+                    <h2>Education:</h2>
+                    <ul>
+                        <li>University of Chicage - Bachelor's in Political Science</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Employment History</h2>
+                        <h3>Walmart</h3>
+                    <ul>
+                        <li>Greeter</li>
+                        <li>January 2005 - March 2010</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                    <h3>Taco Bill's Taco Shack</h3>
+                        <ul>
+                            <li>Head Waitress</li>
+                            <li>March 2010 - April 2019</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                        </ul> 
+
+                </section>
+            </main>
+            </div>
+            );
+        }
+
+        ReactDOM.render(
+            <Resume name='Sally Student' />,
+            document.querySelector('#application-root')
+        );
+
         </script>
 
 
 </body>
 </html>
+
+

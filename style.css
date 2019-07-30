@@ -1,0 +1,10 @@
+img {
+    max-width: 25%;
+    float: right;
+}
+
+header, main {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
